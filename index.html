@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Budget Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="card">
+  <h2>Budget Tracker</h2>
+  <div class="balance">₹<span id="balance">0</span></div>
+  <input id="desc" placeholder="Description">
+  <input id="amt" type="number" placeholder="Amount">
+  <select id="type">
+    <option value="income">Income</option>
+    <option value="expense">Expense</option>
+  </select>
+  <button onclick="addTransaction()">Add</button>
+  <button id="history" onclick="showHistory()">Last Transaction</button>
+  <button onclick="clearAll()">Clear All</button>
+
+  <div class="list" id="list"></div>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>
